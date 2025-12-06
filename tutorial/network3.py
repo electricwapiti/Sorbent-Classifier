@@ -34,7 +34,7 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Running on device: {DEVICE}")
 
 #### Load the MNIST data
-def load_data_shared(filename="data/mnist.pkl.gz"):
+def load_data_shared(filename="Tutorial\data\mnist.pkl.gz"):
     """
     Loads MNIST data and converts it into PyTorch DataLoader objects.
     """
