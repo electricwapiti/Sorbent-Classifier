@@ -4,6 +4,7 @@ from sorbent_loader import load_sorbent_data
 train, val, test = load_sorbent_data()
 
 net = Network([3, 4, 1])
+#don't hardcode, have it be made thru CLI
 
 net.SGD(
     training_data=train,
@@ -14,3 +15,5 @@ net.SGD(
     monitor_training_cost=True,
     monitor_evaluation_cost=True
 )
+
+net.save("sorbent_net.json")
