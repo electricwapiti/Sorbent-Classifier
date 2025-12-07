@@ -5,8 +5,8 @@ net = load("sorbent_net.json")
 INPUT_MEANS = np.array([275, 4, 85])  # replace with actual training means
 INPUT_STDS  = np.array([130, 2, 20])  # replace with actual training stds
 
-Y_MEAN = y_mean
-Y_STD  = y_std
+Y_MEAN = 5
+Y_STD  = 2.5
 
 
 while True:
